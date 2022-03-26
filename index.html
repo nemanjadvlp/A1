@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="image/ico"  href="https://cdn.a1.rs/a1website/img/favicon.ico"  />
+    <title>A1 | Privatni</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <header class="header-main-content">
+            <div class="header-top-bar">
+                <div class="container">
+                    <div class="header-top-bar-holder">
+                        <div class="header-top-bar-left-side">
+                            <ul>
+                                <li class="active">Privatni</li>
+                                <li>Poslovni</li>
+                                <li>Naša mreža</li>
+                                <li>Bezbedni klinci</li>
+                                <li>O nama</li>
+                            </ul>
+                        </div>
+                        <div class="header-top-bar-right-side">
+                            <ul>
+                                <li>Podrška</li>
+                                <li class="header-top-bar-lang">
+                                    <ul>
+                                        <li class="active">SR</li>
+                                        <li>EN</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-main-bar">
+                <div class="container">
+                    <div class="header-main-holder">
+                        <div class="header-top-main-left-side">
+                            <img src="images/logo.png" alt="A1" class="logo-header" />
+                            <ul>
+                                <li>Aktuelno <div class="badge-header-menu"><span>u A1</span></div></li>
+                                <li>Uređaji</li>
+                                <li>Postpaid</li>
+                                <li>Prepaid</li>
+                                <li>Internet</li>
+                                <li>Digitalni servisi</li>
+                                <li>A1 Klub Plus</li>
+                            </ul>
+                        </div>
+                        <div class="header-top-main-right-side">
+                            <ul>
+                                <li><img src="images/icon-search-black.svg" alt="A1" class="icon-search-header" /></li>
+                                <li>Moj A1</li>
+                                <li class="icon-mobile-menu" onclick="toggleMobileMenu()"><img src="images/icon-mobile-menu-black.svg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-mobile-container-main">
+                <div class="header-mobile-container">
+                    <div class="mobile-container-holder-menu">
+                        <div class="close-icon-mobile-header" onclick="toggleMobileMenu()">
+                            <img src="images/icon-mobile-menu-close.svg" />
+                        </div>
+                        <ul class="list-main-header-item">
+                            <li>Početna</li>
+                            <li>Aktuelno <div class="badge-header-menu"><span>u A1</span></div></li>
+                            <li>Uređaji</li>
+                            <li>Postpaid</li>
+                            <li>Prepaid</li>
+                            <li>Internet</li>
+                            <li>Digitalni servisi</li>
+                            <li>A1 Klub Plus</li>
+                        </ul>
+                        <ul class="list-submain-header-item">
+                            <li>Privatni</li>
+                            <li>Poslovni</li>
+                            <li>Naša mreža</li>
+                            <li>Bezbedni klinci</li>
+                            <li>O nama</li>
+                            <li>Podrška</li>
+                            <li class="header-top-bar-lang">
+                                <ul>
+                                    <li class="active">SR</li>
+                                    <li>EN</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section section-1">
+            <div class="container">
+                <div class="section-1-holder">
+                    <div class="section-1-image">
+                        <img src="images/section1-image.png" alt="A1" />
+                    </div>
+                    <div class="section-1-content">
+                        <div class="subtitle-section-1-content">NEO tarifa</div>
+                        <h1>NEO15 samo sad 1.499 din</h1>
+                        <ul>
+                            <li>Tarife</li>
+                            <li>Pogodnosti</li>
+                            <li>Zašto online</li>
+                            <li>Dodaci</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-2">
+            <div class="container-section-2">
+                <div class="section-2-title">
+                    <h2>Izaberi svoj NEO</h2>
+                </div>
+                <div class="section-2-tabs">
+                    <ul>
+                        <li class="tab-list-items-1 tab-list-items active" onClick="showTabItems(1)">Sa uređajem</li>
+                        <li class="tab-list-items-2 tab-list-items" onClick="showTabItems(2)">Bez uređaja</li>
+                    </ul>
+                </div>
+                <div class="section-2-items">
+                    <div class="section-2-item active">
+
+                        <div class="content-item-section-2-item-top">
+                            <div class="section-2-subtitle">NEO 15</div>
+                            <div class="section-2-title">15 GB</div>
+                            <div class="section-2-list">
+                                <ul>
+                                    <li><img src="images/icon_back.svg" /> <span>Neograničeni minut i poruka ka svima</span></li>
+                                    <li><img src="images/icon_back.svg" /> <span>XX internet u zoni zapadanog Balkana</span> <span><img src="images/icon-info-secondary.svg" alt="A1" class="info-icon-list-section-2" /></span></li>
+                                </ul>
+                            </div>
+                            <div class="section-2-services">
+                                <div class="section-2-services">Neograničen net za:</div>
+                                <div class="section-2-services-icons">
+                                    <div class="service-icon">
+                                        <img src="images/viber.svg" alt="viber" class="src">
+                                        <img src="images/facebook.svg" alt="facebook" class="src">
+                                        <img src="images/facebook-messenger.svg" alt="twitter" class="src">
+                                        <img src="images/instagram.svg" alt="instagram" class="src">
+                                        <img src="images/whatsapp.svg" alt="whatsapp" class="src">
+                                        <img src="images/tiktok.svg" alt="tiktok" class="src">
+                                    </div>
+                                </div>
+                                <div class="section-2-services section-2-services-free">Besplatno preko <a href="#0">Moj A1</a>:</div>
+                                <div class="section-2-services-icons">
+                                    <div class="service-icon service-icon-free">
+                                        <img src="images/deezer.svg" alt="deezer" class="src">
+                                        <img src="images/hopster.svg" alt="hopster" class="src">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-2-price section-2-price-item-1">
+                            <div class="section-2-price-old-price"><del>2.899</del></div>
+                            <div class="section-2-price-item">
+                                <p class="price-item">2.399</p>
+                                <p class="value-item">RSD/mes</p>
+                            </div>
+                            <div class="price-title-desc">
+                                Uz 24 meseca ugovorne obaveze i e-račun
+                            </div>
+                        </div>
+                        <div class="section-2-button">
+                            <div class="section-2-btn">
+                                <span>Dodaj u korpu</span>
+                                <span><img src="images/icon-chevron-right-primary.svg" class="img-btn-price" /></span>
+                            </div>
+                        </div>
+                        <div class="section-2-link">
+                            <a href="#0">Izaberite TV ili laptop</a>
+                        </div>
+                    </div>
+                    <div class="section-2-item section-2-item-center">
+                        <div class="content-item-section-2-item-top">
+                            <div class="section-2-subtitle">NEO 5</div>
+                            <div class="section-2-title">5 GB</div>
+                            <div class="section-2-list">
+                                <ul>
+                                    <li><img src="images/icon-check-black.svg" /> <span>Neograničeni minut i poruka ka svima</span></li>
+                                    <li><img src="images/icon-check-black.svg" /> <span>XX internet u zoni zapadanog Balkana</span> <span><img src="images/icon-info-secondary-2.svg" alt="A1" class="info-icon-list-section-2" /></span></li>
+                                </ul>
+                            </div>
+                            <div class="section-2-services">
+                                <div class="section-2-services section-2-services-free">Besplatno preko <a class="red-text" href="#0">Moj A1</a>:</div>
+                                <div class="section-2-services-icons">
+                                    <div class="service-icon">
+                                        <img src="images/viber.svg" alt="viber" class="src">
+                                        <img src="images/facebook.svg" alt="facebook" class="src">
+                                        <img src="images/facebook-messenger.svg" alt="twitter" class="src">
+                                        <img src="images/instagram.svg" alt="instagram" class="src">
+                                        <img src="images/whatsapp.svg" alt="whatsapp" class="src">
+                                        <img src="images/tiktok.svg" alt="tiktok" class="src">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-2-price section-2-price-item-2">
+                            <div class="section-2-price-old-price"></div>
+                            <div class="section-2-price-item">
+                                <p class="price-item">2.099</p>
+                                <p class="value-item">RSD/mes</p>
+                            </div>
+                            <div class="price-title-desc">
+                                Uz 24 meseca ugovorne obaveze i e-račun
+                            </div>
+                        </div>
+                        <div class="section-2-button">
+                            <div class="section-2-btn section-2-btn-white">
+                                <span>Izaberite telefon</span>
+                                <span><img src="images/icon-chevron-right-white.svg" class="img-btn-price" /></span>
+                            </div>
+                        </div>
+                        <div class="section-2-link section-2-link-classic">
+                            <a href="#0">Izaberite TV ili laptop</a>
+                        </div>
+                    </div>
+                    <div class="section-2-item">
+                        <div class="content-item-section-2-item-top">
+                            <div class="section-2-subtitle">NEO 3</div>
+                            <div class="section-2-title">3 GB</div>
+                            <div class="section-2-list">
+                                <ul>
+                                    <li><img src="images/icon-check-black.svg" /> <span>Neograničeni minut i poruka ka svima</span></li>
+                                    <li><img src="images/icon-check-black.svg" /> <span>XX internet u zoni zapadanog Balkana</span> <span><img src="images/icon-info-secondary-2.svg" alt="A1" class="info-icon-list-section-2" /></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-2-price section-2-price-item-3">
+                            <div class="section-2-price-old-price"></div>
+                            <div class="section-2-price-item">
+                                <p class="price-item">1.799</p>
+                                <p class="value-item">RSD/mes</p>
+                            </div>
+                            <div class="price-title-desc">
+                                Uz 24 meseca ugovorne obaveze i e-račun
+                            </div>
+                        </div>
+                        <div class="section-2-button">
+                            <div class="section-2-btn section-2-btn-white">
+                                <span>Izaberite telefon</span>
+                                <span><img src="images/icon-chevron-right-white.svg" class="img-btn-price" /></span>
+                            </div>
+                        </div>
+                        <div class="section-2-link section-2-link-classic">
+                            <a href="#0">Izaberite TV ili laptop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-3">
+            <div class="container">
+                <div class="section-3-content">
+                    <div class="section-3-text">
+                        <p class="section-3-text-subtitle">Pogodnosti</h5>
+                        <h3>Šta ima?</h3>
+                        <p class="section-3-text-description">Net za najvaznije aplikacija i 15 giga uz NEO15</p>
+                        <button class="button-slider-move button button--previous"><</button>
+                        <button class="button-slider-move button button--next">></button>
+                    </div>
+                    <div class="section-3-slider">
+                        <div class="main-carousel" >
+                            <div class="carousel-cell">
+                                <div class="content-carousel-item">
+                                    <div class="content-carousel-item-top">1/3</div>
+                                    <div class="content-carousel-item-bottom">
+                                        <h3 class="content-carousel-item-title">Ne mozes da prekoracis svoje gigabajte</h3>
+                                        <h3 class="content-carousel-item-description">NEO ima zastitu od prekoracenja interneta u nacionalnom saobracaju.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="content-carousel-item">
+                                    <div class="content-carousel-item-top">2/3</div>
+                                    <div class="content-carousel-item-bottom">
+                                        <h3 class="content-carousel-item-title">Ne mozes da prekoracis svoje gigabajte</h3>
+                                        <h3 class="content-carousel-item-description">NEO ima zastitu od prekoracenja interneta u nacionalnom saobracaju.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="content-carousel-item">
+                                    <div class="content-carousel-item-top">3/3</div>
+                                    <div class="content-carousel-item-bottom">
+                                        <h3 class="content-carousel-item-title">Aktiviraj preko Moj A1</h3>
+                                        <h3 class="content-carousel-item-description">Prepusti se neogranicenom netu za Deezer i Hopster koje aktiviras besplatno preko Moj A1 aplikacije uz NEO15 postpaid paket.</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-4">
+            <div class="container">
+                <div class="section-4-holder">
+                    <div class="section-4-left-side">
+                        
+                        <div class="section-4-banner-top">
+                            <div class="banner-top-holder">
+                                <h3 class="title-banner-top">
+                                    Zašto da kupiš online?
+                                </h3>
+                                <p class="subtitle-banner-top">
+                                    Pored toga što kupovinu možeš obaviti gde god da se nalaziš, svakom online kupovinom u Vipu dobijaš još više.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="section-4-banner-down">
+                            <div class="banner-down-holder">
+                                <div class="banner-down-text">
+                                    <div class="banner-down-text-holder">
+                                        <h3>Dobijaš osiguranje telefona</h3>
+                                        <p>Poruči preko online i dobijaš prva 3 meseca osiguranje uređaja bez naknade.</p>
+                                    </div>
+                                </div>
+                                <div class="banner-down-image">
+                                    <img src="images/slika-banner.jpg" alt="A1" />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="section-4-right-side">
+                        <div class="section-4-right-side-banner">
+
+                            <div class="banner-4-text">
+                                <h3 class="title-banner-4">
+                                    Plati prilikom preuzimanja, a dostavljamo ti besplatno
+                                </h3>
+                                <p class="subtitle-banner-4">
+                                    Izaberite najbolju opciju za sebe i plati svoj porudžbinu online ili prilikom preuzimanja. Dostavljamo na tvoju adresu potpuno besplatno!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-5">
+            <div class="container">
+                <div class="carousel-full">
+                    <div class="carousel-full-cell">
+                        <div class="content-carousel-full-item">
+                            <div class="content-carousel-full-text">
+                                <p class="content-carousel-full-subtitle">Vreme je za promenu!</p>
+                                <h3 class="content-carousel-full-title">Prenesi broj u A1</h3>
+                                <p class="content-carousel-full-description">Saznaj sve o tome kako brzo i lako mozes da preneses broj u A1 mrezu</p>
+                                <button class="button-full-slider">Pogledaj dodatke <img src="images/icon-chevron-right-white.svg" alt="A1" /></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-full-cell">
+                        <div class="content-carousel-full-item">
+                            <div class="content-carousel-full-text">
+                                <p class="content-carousel-full-subtitle">Vreme je za promenu!</p>
+                                <h3 class="content-carousel-full-title">Prenesi broj u A1</h3>
+                                <p class="content-carousel-full-description">Saznaj sve o tome kako brzo i lako mozes da preneses broj u A1 mrezu</p>
+                                <button class="button-full-slider">Pogledaj dodatke <img src="images/icon-chevron-right-white.svg" alt="A1" /></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-image-block">
+                    <div class="footer-image-block-text">
+                        <h3>Preuzmite Moj A1 aplikaciju</h3>
+                        <p>I u svakom trenutku proveri stanje na računu. Aktiviraj dodatke i budi u toku sa aktuelnostima.</p>
+                        <div class="footer-image-block-images">
+                            <img src="images/apple-store.png" alt="app store" />
+                            <img src="images/google-play.png" alt="google play" />
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links-block">
+                    <div class="footer-links-top-links">
+                        <ul>
+                            <li>O nama</li>
+                            <li>Press centar</li>
+                            <li>Podrska zajednici</li>
+                            <li>Karijera</li>
+                            <li>A1 mreža</li>
+                        </ul>
+                        <ul class="links-social-icons">
+                            <li>
+                                <img src="images/icon-fb-gray.svg" alt="A1">
+                                <img src="images/icon-ig-gray.svg" alt="A1">
+                                <img src="images/icon-yt-gray.svg" alt="A1">
+                                <img src="images/icon-tw-gray.svg" alt="A1">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-groups">
+                        <div class="footer-links-group">
+                            <h5>Prodajna mesta</h5>
+                            <ul>
+                                <li>Online prodavnica</li>
+                                <li>A1 centri</li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-group">
+                            <h5>Informacije</h5>
+                            <ul>
+                                <li>Podrška</li>
+                                <li>Cenovnici i opšti uslovi</li>
+                                <li>Politika zaštite ličnih podataka</li>
+                                <li>Obaveštenja za korisnike</li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-group">
+                            <h5>Kontakt za privatne korisnike</h5>
+                            <ul>
+                                <li><img src="images/icon-phone.svg" alt="a1" /> 060 1234 (00-24h)</li>
+                                <li><img src="images/icon-email.svg" alt="a1" /> Piši nam</li>
+                            </ul>
+                            <h5>Kontakt za poslovne korisnike</h5>
+                            <ul>
+                                <li><img src="images/icon-phone.svg" alt="a1" /> 060 1230 (08-20h)</li>
+                                <li><img src="images/icon-email.svg" alt="a1" /> Piši nam</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-bottom-line">
+                    <div class="footer-bottom-line-left-side">
+                        2021 A1 mobile d.o.o. Sva prava zadrzana
+                    </div>
+                    <div class="footer-bottom-line-right-side">
+                        <ul>
+                            <li class="active">A1 Srbija</li>
+                            <li>A1 Austrija</li>
+                            <li>A1 Belorusija</li>
+                            <li>A1 Bugarska</li>
+                            <li>A1 Makedonija</li>
+                            <li>A1 Slovenija</li>
+                            <li>FL1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+<script>
+    var elem = document.querySelector('.main-carousel');
+    var elemFull = document.querySelector('.carousel-full');
+    var flkty = new Flickity( elem, {
+        contain: true,
+        // disable previous & next buttons and dots
+        prevNextButtons: false,
+        pageDots: false
+    });
+    var flktyFull = new Flickity( elemFull, {
+    });
+
+    // previous
+    var previousButton = document.querySelector('.button--previous');
+        previousButton.addEventListener( 'click', function() {
+        flkty.previous();
+    });
+    // next
+    var nextButton = document.querySelector('.button--next');
+        nextButton.addEventListener( 'click', function() {
+        flkty.next();
+    });
+
+    function toggleMobileMenu() {
+        var element = document.getElementsByClassName("header-mobile-container")[0];
+        element.classList.toggle('opened');
+    };
+
+    function showTabItems(itemVal) {
+        var element = document.getElementsByClassName("tab-list-items-"+itemVal)[0];
+        var allTabs = document.getElementsByClassName("tab-list-items");
+        for (let i = 0; i < allTabs.length; i++) {
+            allTabs[i].classList.remove('active');
+        }
+        element.classList.add('active');
+
+        var itemElementOne = document.getElementsByClassName("section-2-price-item-1")[0];
+        var itemElementTwo = document.getElementsByClassName("section-2-price-item-2")[0];
+        var itemElementThree = document.getElementsByClassName("section-2-price-item-3")[0];
+
+        if(itemVal === 1) {
+            itemElementOne.querySelector('.section-2-price-old-price').innerHTML = '<del>2.899</del>';
+            itemElementOne.querySelector('.price-item').innerHTML = '2.399';
+            itemElementTwo.querySelector('.price-item').innerHTML = '2.099';
+            itemElementThree.querySelector('.price-item').innerHTML = '1.799';
+        } else {
+            itemElementOne.querySelector('.section-2-price-old-price').innerHTML = '<del>1.999</del>';
+            itemElementOne.querySelector('.price-item').innerHTML = '1.499';
+            itemElementTwo.querySelector('.price-item').innerHTML = '1.599';
+            itemElementThree.querySelector('.price-item').innerHTML = '1.299';
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>
